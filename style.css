@@ -2,16 +2,14 @@ body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     background-color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  
   }
   
   .container {
     background-image: url(background.jpg);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    
+    margin: 0 auto;
+    margin-top: 20px;
     text-align: center;
     max-width: 600px;
     border-radius: 7px;
@@ -92,6 +90,11 @@ body {
   }
   
   @media (max-width: 768px){
+    body {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      background-color: #f7f7f7;
+    }
       form {
           flex-direction: column;
       }
@@ -100,4 +103,14 @@ body {
           width: 100%;
           margin-bottom: 10px;
       }
+      .container {
+        background-image: url(background.jpg);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        
+        text-align: center;
+        max-width: 768px;
+        border-radius: 7px;
+        padding: 20px;
+      }
+      
   }
